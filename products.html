@@ -1,0 +1,133 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="products.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>ShopCart</title>
+  </head>
+  <body onload="{()=>loadFeatured()}">
+    <nav class="navbar navbar-expand-lg" style="background-color: #100f3d">
+      <div class="container-fluid">
+        <img
+          src="images/cart.png"
+          alt="Cart"
+          style="width: 40px; height: 40px; margin-right: 10px"
+        />
+        <a
+          class="navbar-brand"
+          href="#"
+          style="color: white; font-weight: bold; font-family: bahnschrift"
+          >ShopCart</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html"
+                style="color: white; font-family: bahnschrift"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="products.html"
+                style="color: white; font-family: bahnschrift"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="Cart.html"
+                style="color: white; font-family: bahnschrift"
+                >Cart</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="about.html"
+                style="color: white; font-family: bahnschrift"
+                >About Us</a
+              >
+            </li>
+          </ul>
+
+          <a class="nav-link" href="Register.html"
+            ><button
+              class="btn btn-outline-light"
+              style="
+                font-family: bahnschrift;
+                margin-right: 10px;
+                margin-top: 10px;
+              "
+            >
+              Register
+            </button></a
+          >
+          <a class="nav-link" href="Login.html"
+            ><button
+              class="btn btn-outline-light"
+              style="font-family: bahnschrift; margin-top: 10px"
+            >
+              Login
+            </button></a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <center>
+      <h1 style="margin: 10px">Products</h1>
+    </center>
+    <div id="products" class="products"></div>
+    <footer class="footer">
+      <div>
+        <h5>© 2023<span> Shahzaib's Warehouse </span></h5>
+      </div>
+      <div style="margin-top: -10px">
+        <h5>All rights reserved</h5>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="products.js"></script>
+  </body>
+</html>

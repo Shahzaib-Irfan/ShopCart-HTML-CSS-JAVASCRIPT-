@@ -1,0 +1,341 @@
+
+body{
+    background-color: rgb(231, 228, 213);
+}
+
+.hero{
+    position: relative;
+    display: flex;
+    height: 100%;
+}
+
+.hero-left{
+    width: 50%;
+    background-color: inherit;
+    object-fit: scale-down;
+}
+
+.hero-left h1 {
+    text-shadow: 5px 5px 5px #90b6cf;
+    font-weight: bold;
+    text-align: start;
+    margin: 20px 0px 0px 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.span {
+    color: orange;
+}
+
+.hero-left p 
+{
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    font-weight: 400;
+}
+
+.hero-right{
+
+    width: 50%;
+    background-color:inherit
+}
+
+.hero-right img {
+    background-color: inherit;
+    object-fit: cover;
+    height: 80%;
+    width: 80%;
+    margin: 20px 0px 0px 20px;
+}
+
+.hero-button {
+    height: 50px;
+    width: 150px;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #dace9bdc;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 5px;
+    margin-left: 50px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+    background-color: #e4de91b4;
+    transform: translateY(-2px);
+}
+
+.hero-button:active {
+    background-color: #e4de91b4;
+    transform: translateY(2px);
+}
+
+.featured{
+    margin-top: -80px;
+    height: auto;
+    width: 100%;
+    background-color: rgb(211, 210, 210);
+}
+
+.title{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.underline{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5px;
+    width: 100px;
+    background-color:rgba(216, 149, 48, 0.836);
+}
+
+.featured-products{
+    padding: 20px;
+    display: flex;
+    flex:wrap;
+    align-items:center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.featured-product{
+    width: 40%;
+    height: 50%;
+}
+
+.featured-product img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.featured-product img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.featured-product-footer{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.products-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e7a457f6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.products-btn:hover {
+    background-color: #ecbf6a;
+}
+
+.cards-info{
+    width:100%;
+    height:auto;
+    background-color: #f1dbce;
+    display: flex;
+    flex-direction: column;
+    flex:wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Kanit', sans-serif;
+}
+
+.info h2{
+    text-shadow:0 5px 5px;
+}
+
+.info p {
+    margin-left: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.cards{
+    display: flex;
+    width: inherit;
+    flex-direction: row;
+    padding: 50px;
+    flex: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    width: 30%;
+    height: auto;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d69582;
+}
+
+.newsletter{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    font-family: 'kanit', sans-serif;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: inherit;
+}
+
+.newsletter-form{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: inherit;
+}
+
+.newsletter-form p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.newsletter-form input {
+    width: 300px;
+}
+
+.newsletter-form button {
+    width: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b36d13;
+    color: black;
+}
+
+.newsletter-form button:hover {
+    color: white;
+    transition: ease-in 0.2s;
+}
+
+.footer {
+    padding: 20px;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer span{
+    color: #d69582;
+}
+
+@media (min-width: 776px){}
+.hmocIu {
+    flex-direction: row;
+}
+
+@media (max-width:992px){
+    .info{
+        flex-direction: column;
+        margin: auto;
+    }
+    .info p {
+        margin: auto;
+    }
+
+    .card{
+        width: 50%;
+    }
+
+    .newsletter-form{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .newsletter-form p {
+        width:100%;
+    }
+}
+
+@media (max-width: 768px){
+    .hero{
+        flex: wrap;
+    }
+
+    .featured{
+        margin-top: 120px;
+        height: auto;
+    }
+
+    .featured-products {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    .featured-product {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .card{
+        width: 80%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        width: 230px;
+    }
+
+    .hero {
+        position: relative;
+        display: block;
+        height: 100%;
+    }
+
+    .hero-left {
+        width: 100%;
+        background-color: inherit;
+        object-fit: scale-down;
+    }
+
+    .hero-right{
+        width: 0%;
+    }
+}
